@@ -1,0 +1,21 @@
+{
+  "name": "aprendendoapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.8",
+    "vue-loading-overlay": "^6.0.3",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
