@@ -62,7 +62,7 @@
   gap: 20px;
   margin-bottom: 20px;
 }
-
+  
 .movie-poster {
   max-width: 300px;
   height: auto;
