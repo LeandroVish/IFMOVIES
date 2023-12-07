@@ -74,6 +74,9 @@ onMounted(async () => {
       </div>
     </div>
   </div>
+  <div class="footer">
+  <h3>IFMOVIES</h3>
+</div>
 </template>
 
 <style scoped>
@@ -81,46 +84,50 @@ onMounted(async () => {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 0.5rem;
   list-style: none;
   margin-bottom: 2rem;
 }
 
 .genre-item {
-  background-color: #5d6424;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  align-self: center;
-  color: #fff;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: none;
+  height: 50px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.5rem;
+  color: black;
+  transition: 0.5s;
 }
 
 .genre-item:hover {
   cursor: pointer;
-  background-color: #7d8a2e;
-  box-shadow: 0 0 0.5rem #5d6424;
+  background-color: black;
+  color: #fff;
 }
 
 .Tv-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .Tv-card {
   width: 15rem;
   height: 30rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 0.5rem #000;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 .Tv-card img {
   width: 100%;
   height: 20rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem #000;
+  border-radius: 5px 5px 0 0;
 }
 
 .Tv-details {
@@ -144,28 +151,40 @@ onMounted(async () => {
 }
 
 .Tv-genres span {
-  background-color: #748708;
-  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 5px;
   padding: 0.2rem 0.5rem;
-  color: #fff;
+  color: green;
   font-size: 0.8rem;
   font-weight: bold;
 }
 
 .Tv-genres span:hover {
   cursor: pointer;
-  background-color: #455a08;
-  box-shadow: 0 0 0.5rem #748708;
+  background-color: black;
 }
 
 .active {
-  background-color: #67b086;
+  background-color: black;
+  color: #fff;
   font-weight: bolder;
 }
 
 .Tv-genres span.active {
-  background-color: #abc322;
-  color: #000;
+  background-color: black;
   font-weight: bolder;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
 }
 </style>
